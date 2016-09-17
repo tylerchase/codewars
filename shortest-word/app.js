@@ -6,9 +6,11 @@
 function findShort(s){
 var split = s.split(' ')
 counter = 100
+
 for (var i=0; i<split.length; i++){
   if (split[i].length < counter){
   	counter = split[i].length
+     word = split[i]
   	}
   }
   return counter;
